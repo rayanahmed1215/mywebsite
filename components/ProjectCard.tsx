@@ -25,8 +25,14 @@ export default function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
 
-      <span className="mt-6 inline-block text-sm font-medium underline underline-offset-4 group-hover:text-zinc-400">
-        Read more →
+      <span className="mt-8 inline-flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-2 text-sm font-medium text-zinc-300 transition group-hover:border-zinc-500 group-hover:bg-zinc-900 group-hover:text-white">
+        Read more
+      <span
+        aria-hidden="true"
+        className="transition-transform duration-200 group-hover:translate-x-1"
+      >
+        →
+      </span>
       </span>
     </Link>
   );
